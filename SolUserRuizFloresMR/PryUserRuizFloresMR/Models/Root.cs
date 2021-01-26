@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
-
+﻿
 namespace PryUserRuizFloresMR.Models
 {
+    using System.ComponentModel.DataAnnotations;
     public class Root
     {
         [Key]
         //[Required]
         //[StringLength(80, ErrorMessage = "Nombre debe contener de 5 a 80 caracteres", MinimumLength = 5)]
         //[Range(0, 10000, ErrorMessage = "El precio oscila entre 0 a 10000")]
-        [Required]
         public int id { get; set; }
         [Required]
         [StringLength(100, ErrorMessage = "Nombre debe contener de 5 a 100 caracteres", MinimumLength = 5)]
